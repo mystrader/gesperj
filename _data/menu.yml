@@ -1,0 +1,98 @@
+- title: "Biblioteca de Componentes"
+  href: "documentacao/index.html"
+  
+
+- title: "Registro de Preço"
+  href: "#"
+  sub:
+    - title: "PLS"
+      href: "#"  
+    - title: "Ata"
+      href: "#"
+  
+
+- title: "Requisição"
+  href: "#"
+  sub:
+    - title: "Carrinho de Compras"
+      href: "#"  
+    - title: "Consulta de itens"
+      href: "#"
+    - title: "Requisitar"
+      href: "#"
+    - title: "Acompanhar Solicitação de Catalogação"
+      href: "#"
+
+- title: "Processo"
+  href: "#"
+  sub:
+    - title: "Definição"
+      href: "#"  
+    - title: "Planejamento"
+      href: "#"
+    - title: "Pesquisa de Mercado"
+      href: "#"
+    - title: "PED"
+      href: "#"
+
+- title: "Licitação"
+  href: "licitacao/index.html"
+  sub:
+    - title: "Pregão"
+    - href: "#"
+    - title: "Tradicionais"
+    - href: "#"
+    - title: "RDC"
+    - href: "#"
+  
+
+- title: "Contratação"
+  href: "#"
+  sub:
+    - title: "Contratar"
+    - href: "#"
+    - title: "Gestão Contratual"
+    - href: "#"
+    - title: "Contratações Especiais"
+    - href: "#"
+  
+
+- title: "Recebimento"
+  href: "#"
+  sub:
+    - title: "Programa de Entrega"
+    - href: "#"
+    - title: "Receber"
+    - href: "#"
+    - title: "Aceitar"
+    - href: "#"
+    - title: "Avaliação"
+    - href: "#"
+    - title: "Entradas Diversas"
+    - href: "#"
+
+
+- title: "Almoxarifado"
+  href: "#"
+  sub:
+        - title: "Armazenamento"
+        - href: "#"
+        - title: "Gestão"
+        - href: "#"
+ 
+
+- title: "Gestão"
+  href: "#"
+  
+
+- title: "Minutas"
+  href: "#"
+  
+
+- title: "Administração"
+  href: "#"
+  
+
+- title: "Cadastro"
+  href: "#"
+  

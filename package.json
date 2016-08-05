@@ -1,0 +1,13 @@
+{
+  "name": "pages-boiler-plate",
+  "version": "1.0.0",
+  "description": "Pages Boiler Plate",
+  "dependencies": {},
+  "private": "true",
+  "devDependencies": {
+    "gulp-clean": "^0.3.2",
+    "gulp-less": "^1.3.9",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-watch": "^4.3.9"
+  }
+}
