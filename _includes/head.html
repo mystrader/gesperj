@@ -1,38 +1,50 @@
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<meta charset="utf-8" />
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta charset="utf-8"/>
 
+    {% assign lvl = page.url | append:'X' | split:'/' | size %}
+    {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
-{% assign lvl = page.url | append:'X' | split:'/' | size %}
-{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<link rel="apple-touch-icon" href="{{ relative }}pages/ico/60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="{{ relative }}pages/ico/76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="{{ relative }}pages/ico/120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="{{ relative pages/ico/152.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-touch-fullscreen" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta content="" name="description" />
-<meta content="" name="author" />
-<!-- BEGIN Vendor CSS-->
-<link href="{{ relative }}assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
-<link href="{{ relative }}assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="{{ relative }}assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-<link href="{{ relative }}assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="{{ relative }}assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="{{ relative }}assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
-<!-- BEGIN Pages CSS-->
-<link href="{{ relative }}pages/css/pages-icons.css" rel="stylesheet" type="text/css">
-<link class="main-stylesheet" href="{{ relative }}pages/css/pages.css" rel="stylesheet" type="text/css" />
-<!--[if lte IE 9]>
-<link href="{{ relative }}pages/css/ie9.css" rel="stylesheet" type="text/css" />
-<![endif]-->
-<script type="text/javascript">
-    window.onload = function()
-    {
-        // fix for windows 8
-        if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
-            document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="{{ relative }}pages/css/windows.chrome.fix.css" />'
-    }
-</script>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
+    <script type="text/javascript">
+        //<![CDATA[
+        try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"e1d7ab6beec701d032ab3f5eb7c65355",petok:"bebe90730fd2644383798a38927ca56fe34ac709-1470420290-1800",zone:"revox.io",rocket:"0",apps:{"ga_key":{"ua":"UA-56895490-1","ga_bs":"1"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+        //]]>
+    </script>
+    <link rel="apple-touch-icon" href="{{ relative }}pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ relative }}pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ relative }}pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ relative }}pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="{{ relative }}favicon.ico"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <link href="{{ relative }}assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ relative }}assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ relative }}assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ relative }}assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{ relative }}assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{ relative }}assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{ relative }}pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="{{ relative }}pages/css/pages.css" rel="stylesheet" type="text/css"/>
+    <!--[if lte IE 9]>
+    <link href="{{ relative }}assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-56895490-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        /* ]]> */
+    </script>
+</head>
