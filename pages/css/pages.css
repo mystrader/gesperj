@@ -13734,3 +13734,9 @@ Main components
     background-size: 114px 29px;
   }
 }
+/* Font Weights
+------------------------------------
+ */
+.semi-bold {
+  font-weight: 700  !important;
+}

@@ -5,6 +5,8 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var clean = require('gulp-clean');
 var minifycss    = require('gulp-minify-css');
+var notify = require("gulp-notify");
+
 //CONFIG PATHS
 var config = {
 	pages  : './pages',
@@ -12,16 +14,17 @@ var config = {
 	build:'./dist'
 };
 
-//TASKS
+//TASKS 
 gulp.task('less', function () {
   gulp.src(config.pages+'/less/pages.less') 
     .pipe(less({
       paths: [config.pages+'/less/']
     }))
-    .pipe(gulp.dest(config.pages+'/css/'));
+    .pipe(gulp.dest(config.pages+'/css/'))
+    .pipe(notify("Task less: arquivo css gerado."));
 });
 gulp.task('watch', function () {
-	gulp.watch(config.pages+'/less/*.less', function(event) {
+	gulp.watch(config.pages+'/less/**/*.less', function(event) {
 		gulp.run('less');
 	});
 });
