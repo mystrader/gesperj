@@ -1,0 +1,20 @@
+{
+  "name": "gesperj",
+  "description": "dependências do projeto gesperj",
+  "main": "",
+  "authors": [
+    "marcus cunha"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mystrader/gesperj",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}
