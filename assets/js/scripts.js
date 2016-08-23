@@ -27,4 +27,9 @@
                 $(this).data('timer', wait);
             }
         });
+
+        // banner inicial
+        $('.banner-principal').slick();
+
+
     })
