@@ -37,18 +37,25 @@ Generated From LESS
 31. Demo
 -------------------------------------------------------------------*/
 
+// Mixins tools
 @import "mixins";
 @import "modules/direction";
 
-// Responsive Util
+// Includes of Modules
 @import "modules";
 
+// Responsive Util
 @import "responsive";
 
-@theme-name:"gesperj-theme"; 
+//Change your theme here 
+@theme-name:"gesperj";
 @direction: ltr; // use `rtl` or `ltr
 
-.theme {  
+.theme {
     @import "themes/@{theme-name}/theme";
 }
 .theme();
+
+// Custom Gesperj
+@import "themes/gesperj/custom-gesperj/pages-gesperj";     
+

@@ -1,4 +1,4 @@
-// Pages iOS Theme  
+// Pages Default Theme  
 // --------------------------------------------------
 // Copyright Reserved Revox - 2014
 // --------------------------------------------------
@@ -8,21 +8,21 @@
 
 // Global Color 
 // --------------------------------------------------
-// Base Grey Guided Color * change only @base-light
+// Base blue Guided Color * change only @base-light
 // --------------------------------------------------
 
-//Base Grey Color
-@color-master: #495b62;
+//Base blue Color
+@color-master: #083C4F;
 
-// Lighter Grey colors
-@color-master-light:mix(@color-master, #fff, 20%);
-@color-master-lighter:mix(@color-master, #fff, 15%);
-@color-master-lightest:mix(@color-master, #fff, 12%);
+// Lighter blue colors
+@color-master-light:mix(@color-master, #fff, 16%);
+@color-master-lighter:mix(@color-master, #fff, 9.5%);
+@color-master-lightest:mix(@color-master, #fff, 3%);
 
-// Darker Grey colors
+// Darker blue colors
 @color-master-dark:mix(@color-master, #000, 45%);
 @color-master-darker:mix(@color-master, #000, 27%);
-@color-master-darkest:mix(@color-master, #000, 20%);
+@color-master-darkest:mix(@color-master, #000, 18%);
 
 
 @base-font-family: wf_segoe-ui_light,wf_segoe-ui_normal,"Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -32,15 +32,15 @@
 //Menu Animation Curve
 @menu-bezier:.05, .74, .27, .99;
 @menu-icon-size:40px;
-@color-menu :#1f3853;
+@color-menu :#2b303b;
 @color-menu-dark :mix(@color-menu, #000, 77%);
 @color-menu-darker :mix(@color-menu, #000, 90%);
 
 //Generating Menu font color
 @menu-mix-temp : mix(@color-menu, #fff, 92%);
 @menu :hardlight(#fff, @menu-mix-temp);
-//Menu Font Color
 @color-menu-light :@menu;
+//Menu Font Color
 @color-menu-link-hover:#fff;
 
 // Body
@@ -65,7 +65,7 @@
 @layout-gutter-sm : 5px;
 
 // Panels
-@panel-border-color: transparent;
+@panel-border-color: rgba(0, 0, 0, 0.07);
 @panel-padding: 20px;
 @panel-heading-padding: @panel-padding @panel-padding 7px @panel-padding;
 @panel-heading-min-height: 48px;
@@ -78,17 +78,17 @@
 @form-control-border-color: fade(@color-black, 7%);
 
 //Dashboard
-@dashboard-background : @color-master-lightest;
+@dashboard-background : #f5f5f5;
 
 @color-white: #fff;
 @color-black: #000;
 
-@color-success: #2eaeb3;
-@color-complete : #0594dd;
-@color-primary: #5d598d;
-@color-warning: #fbc25e;
-@color-danger: #e95555;
-@color-info: #1f3853;
+@color-success: #10cfbd;
+@color-complete : #48b0f7;
+@color-primary: #6d5cae;
+@color-warning: #f8d053;
+@color-danger: #f55753;
+@color-info: #3b4752;
 
 //Mixing Color varriable for creating both light and dark colors
 @mix-percentage-dark: 81%;
@@ -126,7 +126,8 @@
 @color-primary-darker: mix(@color-primary, @color-black, @mix-percentage-darker);
 
 @color-warning-dark: mix(@color-warning, @color-black, @mix-percentage-dark);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+@color-warning-darker: mix(@color-warning, @color-black, @mix-percentage-darker);
+
 @color-danger-dark: mix(@color-danger, @color-black, @mix-percentage-dark);
 @color-danger-darker: mix(@color-danger, @color-black, @mix-percentage-darker);
 
@@ -154,3 +155,14 @@
 @zIndex-navbar : @zIndex-9;
 @zIndex-sidebar : @zIndex-10;
 @zIndex-tooltips : @zIndex-10;
+
+
+
+// Custom Colors GESPERJ
+// --------------------------------------------------
+//## Estilos para customizar interface mediante requisitos
+
+@side-menu-retratil :#575539;
+@side-menu-retratil-dark :mix(@side-menu-retratil, #000, 45%);
+
+

@@ -18,7 +18,7 @@ var config = {
 gulp.task('less', function () {
   gulp.src(config.pages+'/less/pages.less') 
     .pipe(less({
-      paths: [config.pages+'/less/']
+      paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe(gulp.dest(config.pages+'/css/'))
     .pipe(notify("Task less: arquivo css gerado."));

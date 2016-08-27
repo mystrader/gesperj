@@ -13,7 +13,7 @@
             onKeyEnter: function(searchString) {
                 console.log("Live search for: " + searchString);
                 var searchField = $('#overlay-search');
-                var searchResults = $('.search-results');
+                var searchResults = $('.search-results');    
                 clearTimeout($.data(this, 'timer'));
                 searchResults.fadeOut("fast");
                 var wait = setTimeout(function() {
@@ -28,8 +28,23 @@
             }
         });
 
-        // banner inicial
-        $('.banner-principal').slick();
+        // [ inicial ] > banner inicial
+        $('.banner-principal').slick({
+              dots: true,
+                autoplay: true,
+                autoplaySpeed: 4000, 
+                infinite: true
+             }      
+        );         
+        // [ inicial ] > Carroucel
+        $('.carrocel-logos').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                autoplaySpeed: 6000, 
+                infinite: true
+            });
 
 
     })
